@@ -7,6 +7,7 @@
 //
 
 #import "NSAttributedString+LHTool.h"
+#import "NSString+LHTool.h"
 
 @implementation NSAttributedString (LHTool)
 
