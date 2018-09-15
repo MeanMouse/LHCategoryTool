@@ -339,6 +339,32 @@
 }
 
 /**
+ *  根据替换字符串数组，替换为string字符
+ */
+- (NSString *)stringByReplacingOccurrencesOfStrings:(NSArray *)strings withString:(NSString *)string
+{
+    if (!string) return self;
+    NSString *replaceString = [self copy];
+    for (NSString *subString in strings) {
+        replaceString = [replaceString stringByReplacingOccurrencesOfString:subString withString:string];
+    }
+    return replaceString;
+}
+
+/**
+ *  根据替换字符字典，替换字符串中相对应字符（key：@“被替换字符”，value：@“替换字符”）
+ */
+- (NSString *)stringByReplacingOccurrencesOfStringReplaceDict:(NSDictionary *)replaceDict
+{
+    if (!replaceDict) return self;
+    NSString *replaceString = [self copy];
+    for (NSString *key in replaceDict.allKeys) {
+        replaceString = [replaceString stringByReplacingOccurrencesOfString:key withString:replaceDict[key]];
+    }
+    return replaceString;
+}
+
+/**
  *  字符串转json字符串
  */
 - (NSString *)jsonStringWithString:(NSString *)string{
