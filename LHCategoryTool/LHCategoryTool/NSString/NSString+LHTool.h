@@ -1,6 +1,6 @@
 //
 //  NSString+Tool.h
-//  YykqClinet
+//  LHCategoryTool
 //
 //  Created by 梁辉 on 2017/12/26.
 //  Copyright © 2017年 ElonZung. All rights reserved.

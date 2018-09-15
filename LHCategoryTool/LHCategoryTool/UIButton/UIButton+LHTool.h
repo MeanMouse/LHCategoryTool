@@ -2,8 +2,8 @@
 //  UIButton+LHTool.h
 //  LHCategoryTool
 //
-//  Created by mo2323 on 2018/9/14.
-//  Copyright © 2018年 mo2323. All rights reserved.
+//  Created by 梁辉 on 2018/4/16.
+//  Copyright © 2018年 ElonZung. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

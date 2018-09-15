@@ -1,9 +1,9 @@
 //
-//  NSObject+SXRuntime.m
-//  UINavigation-SXFixSpace
+//  NSAttributedString+Tool.m
+//  LHCategoryTool
 //
-//  Created by charles on 2017/9/8.
-//  Copyright © 2017年 None. All rights reserved.
+//  Created by 梁辉 on 2018/4/16.
+//  Copyright © 2018年 ElonZung. All rights reserved.
 //
 
 #import "NSObject+LHRuntime.h"
@@ -15,7 +15,6 @@ void ProtectCrashProtected(id self, SEL sel) {
 
 @implementation NSObject (SXRuntime)
 
-// MARK: Util
 + (void)swizzleClassMethodWithOriginSel:(SEL)oriSel swizzledSel:(SEL)swiSel {
     Class cls = object_getClass(self);
     

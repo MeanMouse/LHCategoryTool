@@ -1,6 +1,6 @@
 //
-//  UINavigationBar+Setting.m
-//  YykqClinet
+//  UINavigationBar+LHTool.m
+//  LHCategoryTool
 //
 //  Created by 梁辉 on 2018/2/1.
 //  Copyright © 2018年 ElonZung. All rights reserved.

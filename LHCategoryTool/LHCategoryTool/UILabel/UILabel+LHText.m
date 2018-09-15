@@ -1,6 +1,6 @@
 //
 //  UILabel+TextSpace.m
-//  YykqClinet
+//  LHCategoryTool
 //
 //  Created by 梁辉 on 2017/9/18.
 //  Copyright © 2017年 ElonZung. All rights reserved.

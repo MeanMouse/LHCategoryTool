@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSString+LHEncrypt.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *string = @"nsiahihsssssssssss";
+    NSString *key = @"lianghuikkkkkkkgkgddddddddddd";
+    NSString *encryptString = [string DESAndECBEncryptedStringUsingKey:key];
+    NSLog(@"encrypt: %@",encryptString);
+    NSString *dencryptString = [encryptString decryptedDESAndECBStringUsingKey:key];
+    NSLog(@"dencrypt: %@",dencryptString);
 }
 
 - (void)didReceiveMemoryWarning {

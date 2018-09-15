@@ -1,6 +1,6 @@
 //
 //  NSString+Tool.m
-//  YykqClinet
+//  LHCategoryTool
 //
 //  Created by 梁辉 on 2017/12/26.
 //  Copyright © 2017年 ElonZung. All rights reserved.
@@ -36,7 +36,8 @@
 /**
  *  判断是否是正确的手机号码格式
  */
-- (BOOL)isMobileNumber{
+- (BOOL)isMobileNumber
+{
     //手机号码13[0-9], 14[5,7], 15[0, 1, 2, 3, 5, 6, 7, 8, 9], 17[6, 7, 8], 18[0-9], 170[0-9]
     NSString * MOBILE = @"^1(3[0-9]|4[57]|5[0-35-9]|8[0-9]|70)\\d{8}$";
     

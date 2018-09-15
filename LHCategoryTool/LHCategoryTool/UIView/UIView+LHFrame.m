@@ -1,6 +1,6 @@
 //
-//  UIView+JSView.m
-//  oCoffee
+//  UIView+LHFrame.m
+//  LHCategoryTool
 //
 //  Created by xlg on 15/6/3.
 //  Copyright (c) 2015年 osell. All rights reserved.

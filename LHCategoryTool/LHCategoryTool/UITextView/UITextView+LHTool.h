@@ -1,6 +1,6 @@
 //
-//  UITextView+Delegate.h
-//  YykqClinet
+//  UITextView+LHTool.h
+//  LHCategoryTool
 //
 //  Created by 梁辉 on 2018/4/10.
 //  Copyright © 2018年 ElonZung. All rights reserved.

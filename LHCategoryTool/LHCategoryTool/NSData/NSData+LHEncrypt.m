@@ -1,6 +1,6 @@
 //
 //  NSData+Tool.m
-//  NSString和NSMutableString
+//  LHCategoryTool
 //
 //  Created by 梁辉 on 2017/12/27.
 //  Copyright © 2017年 梁辉. All rights reserved.

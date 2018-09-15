@@ -1,9 +1,9 @@
 //
-//  UIImage+Tool.h
-//  hillbuy
+//  UIImage+LHTool.h
+//  LHCategoryTool
 //
-//  Created by Jsfu on 14-10-21.
-//  Copyright (c) 2014年 oCoffee All rights reserved.
+//  Created by 梁辉 on 2018/4/16.
+//  Copyright © 2018年 ElonZung. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

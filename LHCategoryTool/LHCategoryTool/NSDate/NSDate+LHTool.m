@@ -1,6 +1,6 @@
 //
 //  NSDate+Tool.m
-//  Date
+//  LHCategoryTool
 //
 //  Created by 梁辉 on 2017/12/22.
 //  Copyright © 2017年 梁辉. All rights reserved.
