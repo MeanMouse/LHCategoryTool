@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "LHCategoryTool"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "LHCategoryTool is foundation category methods"
 
   s.description  = <<-DESC
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
  
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "http://gitee.com/meanmouse/LHCategoryTool.git", :tag => "0.0.1" }
+  s.source       = { :git => "http://gitee.com/meanmouse/LHCategoryTool.git", :tag => "0.0.2" }
 
   s.source_files  = "LHCategoryTool/**/*.{h,m}", "LHCategoryTool/**/*.{h,m}"
  
