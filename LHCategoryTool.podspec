@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "LHCategoryTool/**/*.{h,m}", "LHCategoryTool/**/*.{h,m}"
  
-  s.frameworks = "Foundation", "UIKit", "CommonCrypto", "objc"
+  s.frameworks = "Foundation"
   
   s.requires_arc = true
 
