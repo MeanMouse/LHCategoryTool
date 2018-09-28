@@ -135,7 +135,7 @@ static char base64EncodingTable[64] = {
 }
 
 /**
- *  md5 加密
+ *  md5 加密，32位,默认小写与md5ForLower32Bate方法效果一致
  */
 - (NSString *)md5String
 {
@@ -155,6 +155,33 @@ static char base64EncodingTable[64] = {
                    digest[12], digest[13],
                    digest[14], digest[15]];
     return s;
+}
+
+/**
+ *  md5 加密，16位，默认小写与md5ForLower16Bate方法效果一致
+ */
+- (NSString *)md5String16Bate
+{
+    CC_MD5_CTX md5;
+    CC_MD5_Init (&md5);
+    CC_MD5_Update (&md5, [self UTF8String], (CC_LONG)[self length]);
+    
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+    CC_MD5_Final (digest, &md5);
+    NSString *md5String = [NSString stringWithFormat: @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
+                   digest[0],  digest[1],
+                   digest[2],  digest[3],
+                   digest[4],  digest[5],
+                   digest[6],  digest[7],
+                   digest[8],  digest[9],
+                   digest[10], digest[11],
+                   digest[12], digest[13],
+                   digest[14], digest[15]];
+    NSString *string;
+    for (int i = 0; i<24; i++) {
+        string = [md5String substringWithRange:NSMakeRange(8, 16)];
+    }
+    return string;
 }
 
 /**
@@ -178,6 +205,7 @@ static char base64EncodingTable[64] = {
     
     NSMutableString *digest = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
     for (NSInteger i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+        // x表示将字母小写
         [digest appendFormat:@"%02x", result[i]];
     }
     return digest;
@@ -195,6 +223,7 @@ static char base64EncodingTable[64] = {
     
     NSMutableString *digest = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
     for (NSInteger i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+        // X表示将字母大写
         [digest appendFormat:@"%02X", result[i]];
     }
     
@@ -218,7 +247,7 @@ static char base64EncodingTable[64] = {
 /**
  *  md5 16位小写加密
  */
-- (NSString *)MD5ForLower16Bate {
+- (NSString *)md5ForLower16Bate {
     
     NSString *md5Str = [self md5ForLower32Bate];
     NSString  *string;

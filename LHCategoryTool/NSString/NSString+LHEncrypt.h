@@ -41,9 +41,14 @@
 - (NSString *)md4String;
 
 /**
- *  md5 加密
+ *  md5 加密，32位，默认小写与md5ForLower32Bate方法效果一致
  */
 - (NSString *)md5String;
+
+/**
+ *  md5 加密，16位,默认小写与md5ForLower16Bate方法效果一致
+ */
+- (NSString *)md5String16Bate;
 
 /**
  *  md5 加盐加密
@@ -67,7 +72,7 @@
 /**
  *  md5 16位小写加密
  */
-- (NSString *)MD5ForLower16Bate;
+- (NSString *)md5ForLower16Bate;
 
 #pragma mark ===============SHA 密文==============
 /**
